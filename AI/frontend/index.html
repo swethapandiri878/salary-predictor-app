@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salary Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>💼 Salary Predictor</h1>
+    <form id="predict-form">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="education">Education:</label>
+      <select id="education" name="education" required>
+        <option value="">--Select--</option>
+        <option value="Bachelors">Bachelors</option>
+        <option value="Masters">Masters</option>
+        <option value="HS-grad">High School</option>
+        <option value="Doctorate">Doctorate</option>
+        <!-- Add more if needed -->
+      </select>
+
+      <label for="occupation">Occupation:</label>
+      <input type="text" id="occupation" name="occupation" required />
+
+      <label for="fnlwgt">FNLWGT:</label>
+      <input type="number" id="fnlwgt" name="fnlwgt" required />
+
+      <label for="workclass">Workclass:</label>
+      <input type="text" id="workclass" name="workclass" required />
+
+      <label for="marital-status">Marital Status:</label>
+      <input type="text" id="marital-status" name="marital-status" required />
+
+      <label for="relationship">Relationship:</label>
+      <input type="text" id="relationship" name="relationship" required />
+
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" required />
+
+      <label for="race">Race:</label>
+      <input type="text" id="race" name="race" required />
+
+      <label for="native-country">Native Country:</label>
+      <input type="text" id="native-country" name="native-country" required />
+
+      <label for="capital-gain">Capital Gain:</label>
+      <input type="number" id="capital-gain" name="capital-gain" required />
+
+      <label for="capital-loss">Capital Loss:</label>
+      <input type="number" id="capital-loss" name="capital-loss" required />
+
+      <label for="hours-per-week">Hours per Week:</label>
+      <input type="number" id="hours-per-week" name="hours-per-week" required />
+
+      <label for="educational-num">Education Num:</label>
+      <input type="number" id="educational-num" name="educational-num" required />
+
+
+      <button type="submit">Predict Salary</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+
+</body>
+</html>
